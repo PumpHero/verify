@@ -2,7 +2,7 @@
 
 You can find the basic JS magic at the top of js/ph.js. Ignore the bloat, we copy-pasted most of it from our landing site.
 
-You can download the repo as a ZIP and just open *verify.html* in your browser to run it offline, or if you want to compile it yourself, first install dependencies by running:
+You can download the repo as a ZIP, unzip to a folder and open *verify.html* in your browser to run it offline, or if you want to compile it yourself, first install dependencies by running:
 
 >npm i
 
