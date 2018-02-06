@@ -1,0 +1,43 @@
+{
+    "title": "Pump Hero",
+    "name": "pumphero-verify",
+    "version": "1.0.0",
+    "description": "Pump Hero verification page only.",
+    "keywords": [
+        "pumphero",
+        "verify"
+    ],
+    "homepage": "https://pumphero.info/",
+    "bugs": {
+        "url": "https://github.com/PumpHero/verify/issues",
+        "email": "support@pumphero.info"
+    },
+    "license": "gpl-3.0",
+    "author": "PumpHero",
+    "contributors": [
+        "Pump Hero (pumphero.info)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PumpHero/verify.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "gulp-htmlmin": "4.0.0",
+        "jquery": "3.3.0",
+        "jquery.easing": "1.4.1",
+        "popper.js": "1.12.9",
+        "random-seed": "0.3.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.23.5",
+        "gulp": "3.9.1",
+        "gulp-bro": "1.0.3",
+        "gulp-clean": "0.4.0",
+        "gulp-clean-css": "3.9.2",
+        "gulp-concat": "2.6.1",
+        "gulp-rename": "1.2.2",
+        "gulp-sass": "3.1.0",
+        "gulp-uglify": "3.0.0"
+    }
+}

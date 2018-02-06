@@ -1,0 +1,27 @@
+header.masthead {
+  padding-top: calc(3rem + 72px);
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h2,h3 {
+    font-size: 1.1rem;
+    @include body-font;
+  }
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(3rem + 106px);
+    padding-bottom: 6rem;
+    h1 {
+      // font-size: 4.75em;
+      font-size: 2.35em;
+      line-height: 3rem;
+    }
+    h2,h3 {
+      font-size: 1.4em;
+    }
+
+  }
+}

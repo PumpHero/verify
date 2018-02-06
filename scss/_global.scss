@@ -1,0 +1,262 @@
+// Typography
+body {
+    @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading-font;
+}
+
+b,
+strong {
+    font-weight: 800;
+}
+
+// Custom Horizontal Rule with Star Icon
+hr.star-light,
+hr.star-dark {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+hr.star-light:after,
+hr.star-dark:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 0.25em;
+    content: '\f005';
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #c54e00;
+}
+
+hr.star-light:after {
+    color: #c54e00;
+    background-color: $primary;
+}
+
+hr.star-dark {
+    border-color: $secondary;
+}
+
+hr.star-dark:after {
+    color: $secondary;
+    background-color: white;
+}
+
+hr.star-dark2:after {
+    color: $secondary;
+    background-color: $primary;
+}
+
+// Section Padding Settings
+section {
+    padding: 6rem 0;
+    h2,
+    h3 {
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+    @media (min-width: 992px) {
+        h2,
+        h3 {
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+// Custom Button Size
+.btn-xl {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+}
+
+// Custom Rounded Social Button
+.btn-social {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+// Scroll to Top Button
+.scroll-to-top {
+    z-index: 1042;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    a {
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: fade-out($gray-900, 0.5);
+        line-height: 3.1rem;
+    }
+}
+
+.blue-text-ph {
+    color: $blue-text;
+}
+
+.social-ctas {
+    position: relative;
+    width: 350px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 30px;
+    height: 220px;
+}
+
+@media(min-width: 768px) {
+    .social-ctas {
+        align-self: flex-start; // display:inline-flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // // align-content: center;
+        // // align-content:space-between
+        // justify-content: space-between;
+        margin-left: 60px;
+        margin-top: 0px;
+        top: -64px;
+    }
+}
+
+.center-flex {
+    display: flex;
+    width: 100%;
+    justify-content: center; // align-self: center;
+    // justify-self: center;
+}
+
+.not-purple {
+    color: rgb(199, 199, 199);
+    &:active,
+    &:hover {
+        color: rgb(204, 253, 255);
+    }
+}
+
+.special-discord-icon {
+    img {
+        filter: brightness(0) invert(1);
+        position: relative;
+        left: -1px;
+        max-width: 90%;
+    }
+    &:hover {
+        img {
+            filter: brightness(0) invert(0);
+        }
+    }
+}
+
+hr.rocket-star:after {
+    content: '\f135';
+}
+
+hr.spaceship:after {
+    content: '\f197';
+}
+
+hr.charts:after {
+    content: '\f201';
+}
+
+hr.infoicon:after {
+    content: '\f05a';
+}
+
+hr.coin:after {
+    content: '\f15a';
+}
+
+hr.cert:after {
+    content: '\f0a3';
+}
+
+hr.question:after {
+    content: '\f059';
+}
+
+.socialbtn {
+    position: relative;
+    display: inline-block; // display:inline-flex;
+    text-align: center;
+    vertical-align: middle; // padding: 10px 18px;
+    width: 165px;
+    height: 52px;
+    border-radius: 6px;
+    background: #e9c624;
+    transition: background 0.2s linear, transform 0.1s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px;
+    border-style: none;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer; // margin-bottom: 0px
+    // margin-left: 10px;
+    // -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.socialbtn:hover {
+    background: #ffffff;
+    transition: background 0.2s linear, transform 0.1s ease-out; // background: -webkit-gradient(linear, left top, left bottom, from(#ffec2b), to(#ffff28));
+    // background: -moz-linear-gradient(top, #ffec2b, #ffff28);
+    // background: linear-gradient(to bottom, #ffec2b, #ffff28);
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+}
+
+.socialbtn:focus {
+    outline: none;
+}
+
+.socialbtn:active {
+    top: 1px;
+    background: #ffffff;
+    transition: background 0.2s linear, transform 0.1s ease-out;
+    transform: translateY(2px);
+    box-shadow: none; // background: -webkit-gradient(linear, left top, left bottom, from(#8c7616), to(#ffd621));
+    // background: -moz-linear-gradient(top, #8c7616, #ffd621);
+    // background: linear-gradient(to bottom, #8c7616, #ffd621);
+}
+
+.underline {
+    text-decoration: underline; // cursor: pointer;
+}
+
+.text-brand-light {
+    color: $brand-light;
+}
+.text-brand-dark {
+  color: $brand-dark;
+}
+.text-green {
+    color: $text-green;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-bold {
+  font-weight: 800;
+}
+.text-status {
+  font-size: 1.1rem;
+}
