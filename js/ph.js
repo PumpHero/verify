@@ -19,7 +19,7 @@ var seed = require('random-seed');
         var rand = new seed(seedInput);
         var index = rand.range(coins.length);
 
-        $('.verify-result-js').text('Winner: ' + coins[index]);
+        $('.verify-result-js').text('Result: ' + coins[index]);
     });
 
 
