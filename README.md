@@ -1,16 +1,16 @@
 # Pump Hero Client-Side Verification
 
-You can find the basic JS magic at the top of js/ph.js. Ignore the bloat, we copy-pasted most of it from our landing site.
+https://pumphero.info/verify.html
 
-You can download the repo as a ZIP, unzip to a folder and open *verify.html* in your browser to run it offline, or if you want to compile it yourself, first install dependencies by running:
+# If you just want to run the pre-compiled files, they are located in the dist/ folder. Unzip anywhere but the steam folder (wink) and run the verify.html that's inside dist/
 
->npm i
+# To compile yourself, first install dependencies by running:
+
+## npm i
 
 Then you can do
->gulp prod
+## gulp prod
 
-to compile it and automatically open browsersync,
-or you can do
->gulp dist
+to compile it to dist/ and it will automatically run browsersync for you.
 
-to just compile into dist/ without browsersync
+(You'll find the JS magic at the top of js/ph.js. Ignore the bloat, it's the same build our landing site uses)
