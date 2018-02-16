@@ -5,9 +5,12 @@ header.masthead {
     font-size: 2rem;
     line-height: 3rem;
   }
-  h2,h3 {
+  h2,h3, p {
     font-size: 1.1rem;
     @include body-font;
+  }
+  p {
+    color: #c44e00;
   }
 }
 @media (min-width: 992px) {
@@ -19,7 +22,7 @@ header.masthead {
       font-size: 2.35em;
       line-height: 3rem;
     }
-    h2,h3 {
+    h2,h3,p {
       font-size: 1.4em;
     }
 

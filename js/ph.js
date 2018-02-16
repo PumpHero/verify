@@ -1,4 +1,5 @@
 var seed = require('random-seed');
+window.$_GET = new URLSearchParams(location.search);
 
 (function($) {
     "use strict"; // Start of use strict
@@ -22,7 +23,15 @@ var seed = require('random-seed');
         $('.verify-result-js').text('Result: ' + coins[index]);
     });
 
+    if ($_GET.get('coins') !== null && $_GET.get('seed') !== null) {
+        var seedVar = $_GET.get('seed');
+        var coinsVar = $_GET.get('coins');
+        var coinsList = coinsVar.replace('%2C', ',');
+        $('.coins-input-js').val(coinsList);
+        $('.seed-input-js').val(seedVar);
+        $('.verify-button-js').click();
 
+    }
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
